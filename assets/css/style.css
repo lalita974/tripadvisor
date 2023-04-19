@@ -63,19 +63,32 @@ header button:hover {
 }
 
 /* MAIN */
-
-main div nav {
+main {
+  margin-top: 45 px;
+}
+main div {
   display: flex;
   align-items: center;
-  border: 1px solid red;
+  justify-content: space-around;
+  height: 65px;
+  gap: 10px;
 }
 
-main div nav a {
-  border: 1px solid red;
-}
-
-header div nav a:hover {
-  background-color: black;
-  padding: 10px;
+main div a {
+  flex: 1;
+  border: 1px solid black;
+  padding: 15px;
+  height: 65px;
+  display: flex;
   border-radius: 20px;
+}
+
+main div a:hover {
+  background-color: black;
+  color: white;
+  height: 65px;
+}
+
+main div a i {
+  text-align: end;
 }
