@@ -45,9 +45,12 @@ header div nav {
   gap: 20px;
 }
 
+header div nav a {
+  padding: 10px;
+}
+
 header div nav a:hover {
   background-color: rgb(238, 238, 238);
-  padding: 10px;
   border-radius: 20px;
 }
 
@@ -63,15 +66,29 @@ header button:hover {
 }
 
 /* MAIN */
-main {
-  margin-top: 45 px;
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 52px;
 }
-main div {
+main > p {
+  margin: 20px 0;
+}
+
+main p a {
+  text-decoration: underline;
+}
+h1 span {
+  color: #ff5d5d;
+}
+
+main > div {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 65px;
   gap: 10px;
+  margin-top: 35px;
 }
 
 main div a {
@@ -80,7 +97,8 @@ main div a {
   padding: 15px;
   height: 65px;
   display: flex;
-  border-radius: 20px;
+  border-radius: 10px;
+  justify-content: space-between;
 }
 
 main div a:hover {
@@ -89,6 +107,60 @@ main div a:hover {
   height: 65px;
 }
 
-main div a i {
-  text-align: end;
+.picturesBloc {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+}
+
+.picturesBloc div:nth-child(1) {
+  height: 430px;
+  width: 655px;
+}
+
+.picturesBloc div:nth-child(1) img {
+  height: 430px;
+  width: 655px;
+  object-fit: cover;
+}
+
+.picturesBloc div div:nth-child(1) {
+  width: 480px;
+}
+
+.picturesBloc div div:nth-child(1) img {
+  width: 480px;
+  height: 213px;
+  object-fit: cover;
+}
+
+.picturesBloc div div:nth-child(2) {
+  width: 480px;
+}
+
+.picturesBloc div div:nth-child(2) img {
+  width: 480px;
+  height: 213px;
+  object-fit: cover;
+}
+
+.picturesBloc div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  height: 430px;
+  gap: 2px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-bottom: 28px;
+}
+.description {
+  /* background-color: #812e2e; */
+  width: 570px;
+  height: auto;
+  font-size: 20px;
 }
