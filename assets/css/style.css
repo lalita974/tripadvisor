@@ -70,6 +70,7 @@ h1 {
   font-weight: bold;
   font-size: 50px;
   margin-top: 52px;
+  font-family: "Trip Sans Medium", sans-serif;
 }
 main > p {
   margin: 20px 0;
@@ -114,32 +115,32 @@ main div a:hover {
   gap: 2px;
 }
 
-.picturesBloc div:nth-child(1) {
+.picturesBloc div:first-child {
   height: 430px;
   width: 655px;
 }
 
-.picturesBloc div:nth-child(1) img {
+.picturesBloc div:first-child img {
   height: 430px;
   width: 655px;
   object-fit: cover;
 }
 
-.picturesBloc div div:nth-child(1) {
+.picturesBloc div div:first-child {
   width: 480px;
 }
 
-.picturesBloc div div:nth-child(1) img {
+.picturesBloc div div:first-child img {
   width: 480px;
   height: 213px;
   object-fit: cover;
 }
 
-.picturesBloc div div:nth-child(2) {
+.picturesBloc div div:last-child {
   width: 480px;
 }
 
-.picturesBloc div div:nth-child(2) img {
+.picturesBloc div div:last-child img {
   width: 480px;
   height: 213px;
   object-fit: cover;
@@ -157,10 +158,81 @@ h2 {
   font-weight: bold;
   margin-top: 70px;
   margin-bottom: 28px;
+  font-family: "Trip Sans Medium", sans-serif;
 }
 .description {
   /* background-color: #812e2e; */
   width: 570px;
   height: auto;
   font-size: 20px;
+}
+
+.arborescence {
+  font-size: 14px;
+  color: rgb(135, 135, 135);
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.carroussel {
+  display: flex;
+  height: 300px;
+  width: 1130px;
+}
+
+.carroussel > div:first-child {
+  /* background-color: blue; */
+  flex: 1;
+}
+.carroussel > div:last-child {
+  /* background-color: green; */
+  flex: 3;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.col {
+  height: 300px;
+  width: calc((100% - 30px) / 3);
+  flex-shrink: 0;
+}
+
+.col > div {
+  height: 200px;
+  position: relative;
+}
+
+.col > div img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  height: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+h4 {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.col p {
+  margin-top: 5px;
+  font-size: 14px;
 }
